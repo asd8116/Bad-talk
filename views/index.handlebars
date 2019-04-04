@@ -1,0 +1,60 @@
+<div class="container talk-bar">
+  <div class="talk-bar-outer">
+    <div class="talk-bar-inner">
+      <h1 class="m-3">你想對誰說幹話 ?</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-10 col-12 mx-auto">
+      <form method="POST" action="/">
+        <div class="card-columns mb-1">
+          <div class="card mb-3">
+            <img class="card-img-top"
+              src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+              alt="engineer">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="engineer" name="engineer"
+                {{#if options.engineer}}checked{{/if}}>
+              <label class="custom-control-label" for="engineer">工程師</label>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <img class="card-img-top"
+              src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+              alt="designer">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="designer" name="designer"
+                {{#if options.designer}}checked{{/if}}>
+              <label class="custom-control-label" for="designer">設計師</label>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <img class="card-img-top"
+              src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+              alt="entrepreneur">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="entrepreneur" name="entrepreneur"
+                {{#if options.entrepreneur}}checked{{/if}}>
+              <label class="custom-control-label" for="entrepreneur">創業家</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- submit button -->
+        <button class="btn btn-danger mb-4" type="submit">產生幹話</button>
+
+        <!-- show speech -->
+        {{#if speech}}
+        <div class="alert alert-warning" role="alert">
+          <h2><code class="text-primary">{{speech}}</code></h2>
+        </div>
+        {{/if}}
+      </form>
+    </div>
+  </div>
+</div>

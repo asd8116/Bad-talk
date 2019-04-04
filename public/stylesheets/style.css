@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+
+.navbar-dark .navbar-brand {
+  font-family: cursive;
+  font-size: 30px;
+}
+
+.talk-bar-inner,
+.custom-control {
+  text-align: center
+}
+
+.m-3,
+.custom-control-label,
+.btn-danger,
+.text-primary {
+  font-family: 'Noto Sans TC',
+    sans-serif;
+}
+
+.card {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  height: 250px;
+}
