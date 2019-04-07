@@ -19,15 +19,15 @@ function badTalk(options) {
   // create a collection to store things user picked up
   let collection = []
 
-  if (options.engineer === 'on') {
+  if (options.job === 'engineer') {
     collection = collection.concat(target[0], sample(task.engineer))
   }
 
-  if (options.designer === 'on') {
+  if (options.job === 'designer') {
     collection = collection.concat(target[1], sample(task.designer))
   }
 
-  if (options.entrepreneur === 'on') {
+  if (options.job === 'entrepreneur') {
     collection = collection.concat(target[2], sample(task.entrepreneur))
   }
 

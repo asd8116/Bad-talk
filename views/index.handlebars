@@ -1,8 +1,6 @@
 <div class="container talk-bar">
-  <div class="talk-bar-outer">
-    <div class="talk-bar-inner">
-      <h1 class="m-3">你想對誰說幹話 ?</h1>
-    </div>
+  <div class="talk-bar-inner">
+    <h1 class="m-3">你想對誰說幹話 ?</h1>
   </div>
 </div>
 
@@ -15,10 +13,9 @@
             <img class="card-img-top"
               src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
               alt="engineer">
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="engineer" name="engineer"
-                {{#if options.engineer}}checked{{/if}}>
-              <label class="custom-control-label" for="engineer">工程師</label>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" value="engineer" name="job">
+              <label class="form-check-label" for="job">工程師</label>
             </div>
           </div>
 
@@ -26,10 +23,9 @@
             <img class="card-img-top"
               src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
               alt="designer">
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="designer" name="designer"
-                {{#if options.designer}}checked{{/if}}>
-              <label class="custom-control-label" for="designer">設計師</label>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" value="designer" name="job">
+              <label class="form-check-label" for="job">設計師</label>
             </div>
           </div>
 
@@ -37,10 +33,9 @@
             <img class="card-img-top"
               src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
               alt="entrepreneur">
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="entrepreneur" name="entrepreneur"
-                {{#if options.entrepreneur}}checked{{/if}}>
-              <label class="custom-control-label" for="entrepreneur">創業家</label>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" value="entrepreneur" name="job">
+              <label class="form-check-label" for="job">創業家</label>
             </div>
           </div>
         </div>

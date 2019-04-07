@@ -6,12 +6,12 @@
 }
 
 .talk-bar-inner,
-.custom-control {
+.form-check {
   text-align: center
 }
 
 .m-3,
-.custom-control-label,
+.form-check-label,
 .btn-danger,
 .text-primary {
   font-family: 'Noto Sans TC',
